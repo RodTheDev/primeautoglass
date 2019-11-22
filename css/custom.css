@@ -2,6 +2,9 @@
 ::-webkit-scrollbar {
     display: none!important;
 }
+html{
+
+}
 body {
   padding-top: 54px;
   font-family: 'Istok Web', sans-serif;
@@ -12,8 +15,76 @@ body {
   background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(12,13,13,1) 100%);
   background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(12,13,13,1) 100%);
   background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(12,13,13,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end);
+
 }
+#contact-page{
+  padding-top: 1.6em;
+  color: #fff;
+  text-align:center;
+  height: 100%;
+  font-size: 1.7em;
+}
+
+#contact-main {
+  color: #fff;
+}
+hr{
+  background-color:#fff;
+}
+#services-page{
+  height: 100%;
+  padding-top:1.3em;
+
+}
+#services-page h5, h6, p.white-text{
+  text-align: left!important;
+  font-size: 1.8em;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+
+}
+#map{
+  height: 100%;
+  width: 100%;
+  max-width: 90%;
+  position: relative;
+  left:0;
+  top: 0;
+}
+.diagram{
+  padding: 1.5em;
+  text-align: center;
+}
+img.ri
+{
+	position: relative;
+	max-width: 100%;
+
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+.navbar-brand{
+  font-family: 'Alfa Slab One', cursive;
+
+}
+nav.navbar ul li{
+  font-size: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+nav.navbar ul a{
+  color: #fff;
+}
+.navbar li.active > a {
+	background-color: #333;
+  padding: 3px;
+	color: #438DD5;
+  border-radius:5px;
+}
+
 #header-text{
   color: #000;
   padding: .3em;
@@ -23,15 +94,41 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.29);
 }
 .header_text{
-  font-size: 1.3em;;
+  font-size: 1.7em;;
   text-align: left;
   text-rendering: optimizeLegibility;
   margin-top: 1em;
   color: #fffaf6;
 
 }
+
+.card-body{
+  color: #000;
+  font-size:1.5em;
+}
 .header-img{
   width: 70%;
+}
+a.btn.phone{
+
+}
+a.btn {
+  text-align: center;
+  box-shadow: 3px 3px 5px #000;
+  border: 3px solid #000;
+  border-radius: 5px;
+  font-size: 1.5em;
+  width: 100%;
+  margin: .1em 0 .1em 0;
+  color: #000;
+}
+.btn:focus{
+  font-size: 1.6em;
+  color: #fff;
+}
+.btn:hover{
+  font-size: 1.6em;
+  color: #fff;
 }
 div.yelp-reviews{
   height: 30em;
@@ -47,12 +144,17 @@ div.yelp-reviews{
 .form-container{
   padding: 5%;
   max-width: 100%;
-  padding-top: 10%;
-  margin: 10px;
-  background-color: #fff;
+  font-size: 1.3em;
+  margin: 10px 0px;
+  background-color: #333A40;
   border-radius:5px;
   box-shadow: 2px 2px 2px #000;
-  color:#000!important;
+  color:#fff!important;
+}
+
+label{
+  width: 100%;
+  display: block;
 }
 #thumbnail{
   box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.29);
@@ -72,9 +174,7 @@ form button{
   margin: .2em 0 .4em 0;
   box-shadow: .1em .1em .1em #000;
 }
-a.btn{
-  margin: .1em 0 .1em 0;
-}
+
 @media only screen and (max-width: 991px) {
     div.yelp-reviews{
       height: 30em;
@@ -89,22 +189,47 @@ a.btn{
   }
   .header_text{
     margin-top: 1em;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.29);
     color: #fffaf6;
   }
   .header-img{
     width: 100%;
   }
+  #services-page h5, h6, p.white-text{
+    text-align: left!important;
+    font-size: 1.5em;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+
+  }
+
 }
 @media only screen and (max-width: 768px) {
   .header_text{
     margin-top: 1em;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.29);
     color: #fffaf6;
   }
   .header-img{
     width: 100%;
+  }
+  #services-page h5, h6, p.white-text{
+    text-align: left!important;
+    font-size: 1.5em;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+
+  }
+  .card-body{
+    color: #000;
+    font-size:1.5em;
+  }
+  .form-container {
+    padding: -10px
+  }
+  #txt{
+    font-size:.8em;
   }
 }
